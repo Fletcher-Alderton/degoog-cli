@@ -1,0 +1,187 @@
+{
+  "machine": {
+    "cpu": "Apple M3 Pro",
+    "os": "Darwin 25.6.0",
+    "quick": false
+  },
+  "upstream_rev": "6a8a8bb",
+  "bun": "1.3.14",
+  "footprint": {
+    "degoog-cli binary MB": 6.991392,
+    "upstream dist/main.js MB": 2.139149,
+    "bun runtime MB": 63.096576,
+    "upstream node_modules MB": 58.074768
+  },
+  "cold_start": {
+    "degoog-cli": {
+      "p50_ms": 3.3932914957404137,
+      "min_ms": 3.0778750078752637
+    },
+    "upstream": {
+      "p50_ms": 70.19729150488274,
+      "min_ms": 68.51454100979026
+    }
+  },
+  "load": {
+    "degoog-cli": {
+      "tools": {
+        "search": {
+          "n": 200,
+          "p50_ms": 0.3307920051156543,
+          "p95_ms": 0.3959125009714625,
+          "mean_ms": 0.34666395535168704,
+          "cpu_ms_per_call": 0.2500000000000002,
+          "calls_per_s": 2866.1045519409536,
+          "shape": {
+            "results": 6
+          }
+        },
+        "scrape": {
+          "n": 40,
+          "p50_ms": 19.862853499944322,
+          "p95_ms": 21.67738750213175,
+          "mean_ms": 20.367457224347163,
+          "cpu_ms_per_call": 31.75,
+          "calls_per_s": 49.083696895016146,
+          "shape": {
+            "useful": 4,
+            "chunks": 16
+          }
+        },
+        "bundle_search": {
+          "n": 40,
+          "p50_ms": 20.092396000109147,
+          "p95_ms": 20.5091003117559,
+          "mean_ms": 20.10960937550408,
+          "cpu_ms_per_call": 24.250000000000007,
+          "calls_per_s": 49.7106657812754,
+          "shape": {
+            "sources": 3,
+            "chunks": 12,
+            "chars": 6160
+          }
+        },
+        "discover": {
+          "n": 100,
+          "p50_ms": 0.36220800393493846,
+          "p95_ms": 0.4077729048731271,
+          "mean_ms": 0.37723458983236924,
+          "cpu_ms_per_call": 0.29999999999999805,
+          "calls_per_s": 2637.5539783878494,
+          "shape": {
+            "engines": 4
+          }
+        }
+      },
+      "first_ready_ms": 1.9686669984366745,
+      "idle_rss_mb": 6.0625,
+      "startup_cpu_s": 0.0,
+      "rss_after_load_mb": 37.9375,
+      "concurrent": {
+        "search": {
+          "in_flight": 16,
+          "calls": 640,
+          "calls_per_s": 5172.154307615224,
+          "p50_ms": 0.8761040007811971,
+          "cpu_ms_per_call": 0.2968749999999999
+        },
+        "bundle_search": {
+          "in_flight": 16,
+          "calls": 64,
+          "calls_per_s": 210.4895611243171,
+          "p50_ms": 54.06349999975646,
+          "cpu_ms_per_call": 37.65624999999999
+        }
+      },
+      "rss_settled_mb": 188.859375,
+      "peak_rss_mb": 188.90625,
+      "total_cpu_s": 5.278993
+    },
+    "upstream": {
+      "tools": {
+        "search": {
+          "n": 200,
+          "p50_ms": 0.8996039978228509,
+          "p95_ms": 1.733949994377325,
+          "mean_ms": 1.0022306547762128,
+          "cpu_ms_per_call": 1.0499999999999998,
+          "calls_per_s": 995.0822191083348,
+          "shape": {
+            "results": 6
+          }
+        },
+        "scrape": {
+          "n": 40,
+          "p50_ms": 143.07031249336433,
+          "p95_ms": 152.39427320557297,
+          "mean_ms": 143.55807084866683,
+          "cpu_ms_per_call": 166.75000000000003,
+          "calls_per_s": 6.965360630350545,
+          "shape": {
+            "useful": 4,
+            "chunks": 16
+          }
+        },
+        "bundle_search": {
+          "n": 40,
+          "p50_ms": 115.23454149573809,
+          "p95_ms": 121.38691249347175,
+          "mean_ms": 115.41872604866512,
+          "cpu_ms_per_call": 122.24999999999997,
+          "calls_per_s": 8.663338627101721,
+          "shape": {
+            "sources": 3,
+            "chunks": 12,
+            "chars": 6160
+          }
+        },
+        "discover": {
+          "n": 100,
+          "p50_ms": 0.5316250026226044,
+          "p95_ms": 1.1493999896629246,
+          "mean_ms": 0.6196196195378434,
+          "cpu_ms_per_call": 0.5000000000000071,
+          "calls_per_s": 1606.552601166598,
+          "shape": {
+            "engines": 4
+          }
+        }
+      },
+      "first_ready_ms": 66.91058300202712,
+      "idle_rss_mb": 68.640625,
+      "startup_cpu_s": 0.09,
+      "rss_after_load_mb": 446.328125,
+      "concurrent": {
+        "search": {
+          "in_flight": 16,
+          "calls": 640,
+          "calls_per_s": 1804.5992608711638,
+          "p50_ms": 4.4991460017627105,
+          "cpu_ms_per_call": 0.8593749999999984
+        },
+        "bundle_search": {
+          "in_flight": 16,
+          "calls": 64,
+          "calls_per_s": 8.575306744317773,
+          "p50_ms": 1011.2159170021187,
+          "cpu_ms_per_call": 128.43750000000003
+        }
+      },
+      "rss_settled_mb": 532.984375,
+      "peak_rss_mb": 533.078125,
+      "total_cpu_s": 23.064315999999998
+    }
+  },
+  "cli_oneshot": {
+    "search": {
+      "p50_ms": 6.336771002679598,
+      "cpu_ms": 4.676,
+      "max_rss_mb": 7.546875
+    },
+    "bundle": {
+      "p50_ms": 29.39868749672314,
+      "cpu_ms": 36.403999999999996,
+      "max_rss_mb": 21.40625
+    }
+  }
+}

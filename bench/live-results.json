@@ -1,0 +1,36 @@
+{
+  "server": "live Degoog instance",
+  "queries": 8,
+  "results": {
+    "degoog-cli": {
+      "search": {
+        "p50_ms": 978.2512710080482,
+        "mean_ms": 1275.1170258798084,
+        "n": 8
+      },
+      "bundle_search": {
+        "p50_ms": 3030.1365414998145,
+        "mean_ms": 3474.883260374554,
+        "n": 8
+      },
+      "cpu_ms_per_call": 55.0,
+      "rss_mb": 40.71875,
+      "bundle_sources_mean": 3
+    },
+    "upstream": {
+      "search": {
+        "p50_ms": 1010.2228334944812,
+        "mean_ms": 958.1917293744482,
+        "n": 8
+      },
+      "bundle_search": {
+        "p50_ms": 2424.4874580035685,
+        "mean_ms": 2960.2226196238917,
+        "n": 8
+      },
+      "cpu_ms_per_call": 320.62500000000006,
+      "rss_mb": 268.40625,
+      "bundle_sources_mean": 3
+    }
+  }
+}
